@@ -56,8 +56,8 @@ const hesap = () => {
   var gider = gondKDV + gondKom + gondKargoMaliyeti + gondUrunMaliyeti + gondPaketMaliyeti + gondReklamMaliyeti + iadeKargoMaliyeti + iadeCiroMaliyeti
 
   var kar = gelir - gider
-  var adetBasiKar = (kar)/(gonderiPaketSayisi.value - iadePaketSayısı.value)
-  var adetReklam = (gondReklamMaliyeti)/(gonderiPaketSayisi.value - iadePaketSayısı.value)
+  var adetBasiKar = kar/(gonderiPaketSayisi.value - iadePaketSayısı.value)
+  var adetReklam = gondReklamMaliyeti/(gonderiPaketSayisi.value - iadePaketSayısı.value)
 
   return {
     tarih,
