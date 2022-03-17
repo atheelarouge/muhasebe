@@ -99,8 +99,8 @@ const insertData = (hesapObj) => {
     / Ciro: <strong>${hesapObj.gondCiro} TL </strong>
     / İadeKDV: <strong>${hesapObj.iadeKDV} TL </strong>
     / İadeT.Komisyon: <strong>${hesapObj.iadeKomMal} TL </strong>
-    / Toplam: <strong>${hesapObj.gelir} TL </strong>
     / Tedarikçi İade: <strong>${hesapObj.tedarikciİadeMal} TL </strong>
+    / Toplam: <strong>${hesapObj.gelir} TL </strong>
 
     <p> <strong> Gider </strong></p>
     G.KDV: <strong> ${hesapObj.gondKDV} TL </strong>
