@@ -49,12 +49,15 @@ const hesap = () => {
   var iadeUruMal = iadeUrunMaliyet.value*1
   var iadeUrunSay = iadePaketSayısı.value
   var gondPaketSay = gonderiPaketSayisi.value
+  
 
   // Kar Hesap
   var gelir = gondCiro + iadeKDV + iadeKomMal + tedarikciİadeMal
   var gider = gondKDV + gondKom + gondKargoMaliyeti + gondUrunMaliyeti + gondPaketMaliyeti + gondReklamMaliyeti + iadeKargoMaliyeti + iadeCiroMaliyeti
 
   var kar = gelir - gider
+  var adetBasiKar = (kar)/(gonderiPaketSayisi.value - iadePaketSayısı.value)
+  var adetReklam = (gondReklamMaliyeti)/(gonderiPaketSayisi.value - iadePaketSayısı.value)
 
   return {
     tarih,
@@ -77,7 +80,9 @@ const hesap = () => {
     iadeUruMal,
     tedarikciİadeMal,
     iadeUrunSay,
-    gondPaketSay
+    gondPaketSay,
+    adetBasiKar,
+    adetReklam
   }
 }
 
@@ -111,6 +116,8 @@ const insertData = (hesapObj) => {
     / Gelir: <strong> ${hesapObj.gelir} TL </strong>
     / Gider: <strong> ${hesapObj.gider} TL </strong>
     / Kar: <strong> ${hesapObj.kar} TL </strong> 
+    / Adet Başı Kar: <strong> ${hesapObj.adetBasiKar} TL </strong> 
+    / Adet Reklam: <strong> ${hesapObj.adetReklam} TL </strong> 
     / İade Stok: <strong> ${hesapObj.iadeUruMal} TL (${hesapObj.iadeUrunSay} Ürün) </strong>
     
 
