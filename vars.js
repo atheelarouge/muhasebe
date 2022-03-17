@@ -93,7 +93,7 @@ const insertData = (hesapObj) => {
   li.innerHTML = `
     <span>x</span id="remove_kayit">
     <p>Tarih: ${hesapObj.tarih}</p>
-    <p> Komisyon Oranı: <strong> ${hesapObj.gondKomOran}</strong></p>
+    <p> Komisyon Oranı: <strong> % ${hesapObj.gondKomOran}</strong></p>
     <p> <strong> Gelir </strong></p>
     / Paket Sayısı: <strong>${hesapObj.gondPaketSay}</strong>
     / Ciro: <strong>${hesapObj.gondCiro} TL </strong>
