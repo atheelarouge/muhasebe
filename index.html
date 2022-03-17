@@ -9,14 +9,14 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
-  <title>Fiyat Belirleme</title>
+  <title>Erkek Hesap TMA</title>
 </head>
 
 <body>
   <nav id="nav">
     <div id="logo">
       <div id="logo">
-        <a href="/index.html">Erkek Hesap TM</a>
+        <a href="/index.html">Erkek Hesap TMA</a>
       </div>
     </div>
     <div id="logo">
@@ -115,7 +115,40 @@
         <p>Tarih: <strong>17 Mart</strong> / Ciro: <strong>3.175 TL</strong> / S.Adedi: <strong>20</strong> / A.B.Reklam: <strong>29,3 TL</strong> / KDV: <strong>317,5TL</strong>  /T.Komisyon: <strong>571,5 TL</strong> / Kargo Bedeli: <strong>200 TL</strong> / Ürün Bedeli: <strong>900 TL</strong> / Ü.Paketleme Masrafı: <strong>200 TL</strong> / Reklam: <strong>400 TL</strong> / Kar: <strong>586 TL</strong></p>
     </li> -->
     </div>
+    <div class="genel">
+      <div id="genel_hesap">
+        <h2>Genel Toplam</h2>
+        <div id="toplam_gelir">
+        </div>
+        <div class="toplam_gelir_div">
+          <input name="toplam_gelir_input" type="number" id="toplam_gelir_input"
+            placeholder="Ek Masraf Ekle veya Çıkar">
+        </div>
+        <button class="toplam_gelir_arti" type="submit">Ekle</button>
+        <button class="toplam_gelir_eksi" type="submit">Çıkar</button>
+      </div>
 
+      <div id="avans">
+        <h2 id="avans_header">Avans</h2>
+        <div class="avans_toplam">
+          <div class="tuncay">
+            <h4 id="tuncay_header">Tuncay</h4>
+            <h4 id="avans_miktar_tun">-1500</h4>
+            <div class="avans_input">
+              <input type="number" id="tuncay_avans_input" placeholder="Avans miktarı yaz">
+            </div>
+            <div class="avans_btn">
+              <button class="avans_btn_ekle_tun">Ekle</button>
+              <button class="avans_btn_cıkar_tun">Çıkar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
   <script src="vars.js"></script>
 </body>
 
