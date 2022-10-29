@@ -42,7 +42,7 @@ const hesap = () => {
   var gondKom = Math.round(((gondCiro/100)*gondKomOran))
   var gondKargoMaliyeti = gonderiKargo.value*1
   var gondUrunMaliyeti = gonderiUrunMaliyeti.value*1
-  var gondPaketMaliyeti = gonderiPaketSayisi.value*5
+  var gondPaketMaliyeti = gonderiPaketSayisi.value*10
   var gondReklamMaliyeti = gonderiReklam.value*1
   var iadeKargoMaliyeti = iadeKargo.value*1
   var iadePaketMaliyeti = iadePaketSayısı.value*5
